@@ -1,4 +1,4 @@
-setwd("/gvl/projects/current/demo-data")
+setwd("/gvl/projects/current/demo-data-bcc2020")
 data <- read.csv("./rep2_rna_seq_mouse.tsv", header=TRUE, sep="\t",  row.names = 1)
 labels <- read.csv("./datalabels.tsv", header=TRUE, sep="\t",  row.names = 1)
 data_labeled <- rbind(t(labels), data)
